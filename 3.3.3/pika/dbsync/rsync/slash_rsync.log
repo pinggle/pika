@@ -1,0 +1,4 @@
+2020/05/29 11:01:36 [745] rsyncd version 3.1.0 starting, listening on port 10221
+2020/05/29 11:01:36 [745] bind() failed: Address already in use (address-family 2)
+2020/05/29 11:01:36 [745] unable to bind any inbound sockets on port 10221
+2020/05/29 11:01:36 [745] rsync error: error in socket IO (code 10) at socket.c(555) [Receiver=3.1.0]
