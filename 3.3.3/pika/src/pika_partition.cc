@@ -301,6 +301,8 @@ bool Partition::ChangeDb(const std::string& new_path) {
   }
 
   if (0 != slash::RenameFile(new_path.c_str(), db_path_.c_str())) {
+      LOG(WARNING) << "RenameFile: new_path:" << new_path << ", db_path_:" << db_path_
+              << ", Failed to rename new db path when change db, error: " << strerror(errno);
     LOG(WARNING) << "Partition: " << partition_name_
         << ", Failed to rename new db path when change db, error: " << strerror(errno);
     return false;
