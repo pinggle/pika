@@ -33,12 +33,12 @@
 make_config.mk
 log/
 lib/
-tools/
+# tools/
 output/
 
 # DB
 # sdb/
-dump/
+# dump/
 
 # third party
 gdb.txt
